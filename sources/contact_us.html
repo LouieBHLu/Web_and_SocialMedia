@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel = "stylesheet" href="contact_us.css" />
+    <script type="text/javascript" src="login.js"></script>
+</head>
+
+<body>
+    <!-- Picture Map to home page -->
+    <map name="home">
+        <area shape="rect" coords="0,0,1455,740" href="home.html">
+    </map>
+
+    <div>
+        <img style="position:absolute; z-index:1;" width="1455" height="740" 
+        src="../pictures/contact_us.jpg" usemap="#home"/>    
+    </div>
+
+    <div class="container" style="position:absolute; z-index:2; width:500px; height:500px; background-color:rgb(5, 43, 77); top:120px; left:870px;">
+        <div>
+            <form method="post" action="login.js">
+                <p><br><label class="label_input">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp您的姓名</label><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="name" class="text_field" placeholder="请输入您的姓名"/>
+                </p>
+
+                <p><label class="label_input">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp联系方式</label><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="phone" class="text_field" placeholder="请留下您的联系方式"/>
+                </p>
+
+                <p><label class="label_input">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp联系地址</label><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="address" class="text_field" placeholder="请留下您的联系地址"/>
+                </p>
+
+                <p><label class="label_input">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp合作需求</label><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="cooperation" class="long_text_field" placeholder="我能为您做什么"/>
+                </p>
+                
+                <div id="login_control">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="button" id="btn_login" value="提交" onclick=login() class="button"/>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

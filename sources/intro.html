@@ -5,20 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <link rel = "stylesheet" href="intro.css" />
-    <script src = "home.js"></script>
 </head>
 
 <body>
+    <!-- Picture Map to home page -->
+    <map name="home">
+        <area shape="rect" coords="0,0,550,430" href="home.html">
+        <area shape="rect" coords="0,0,1024,520" href="home.html">
+        <area shape="rect" coords="0,0,533,74" href="home.html">
+    </map>
+
     <td style="position:relative;">
         <!-- Left -->
         <img style="position:absolute; z-index:2; top:270px; left:0%;" width="550" height="430"
-        src="../pictures/2_left.png"/>
+        src="../pictures/2_left.png" usemap="#home">
         <!-- Right -->
         <img style="position:absolute; z-index:2; top:250px; left:29%;" width="1024" height="520" 
-        src="../pictures/ladder.png"/>
+        src="../pictures/ladder.png" usemap="#home">
         <!-- Top -->
         <img style="position:absolute; z-index:2; top:150px; left:900px;" width="533" height="74" 
-        src="../pictures/found.png"/>
+        src="../pictures/found.png" usemap="#home">
     </td>
 </body>
 </html>
