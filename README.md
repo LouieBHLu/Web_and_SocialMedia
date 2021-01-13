@@ -8,5 +8,6 @@
 
 ## Contributer
 
-- Du Hangyu
 - Lu Mingxuan
+- Du Hangyu
+
